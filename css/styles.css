@@ -1,9 +1,10 @@
-/* Project styles */
+/* Apply the page's diagonal multicolor background. */
 
 body {
   background: linear-gradient(135deg, #1e3a8a, #059669, #7c3aed);
 }
 
+/* Style the hero heading as a centered glass-effect panel. */
 .hero-headline {
   width: fit-content;
   margin-left: auto;
@@ -18,6 +19,7 @@ body {
   border-radius: 16px;
 }
 
+/* Keep the hero image responsive and apply the glass-effect frame. */
 .hero-photo {
   display: block;
   width: 100%;
@@ -35,11 +37,13 @@ body {
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.25);
 }
 
+/* Center the hero description text. */
 .hero-text {
   color: #000;
   text-align: center;
 }
 
+/* Style the hero call-to-action link as a centered button. */
 .hero-cta {
   display: block;
   width: fit-content;
@@ -56,16 +60,19 @@ body {
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.25);
 }
 
+/* Provide visual feedback when the call-to-action is hovered or focused. */
 .hero-cta:hover,
 .hero-cta:focus-visible {
   background: rgba(255, 255, 255, 0.3);
 }
 
+/* Center the gallery and memory section headings. */
 .gallery-heading,
 .memory-heading {
   text-align: center;
 }
 
+/* Arrange gallery images in responsive columns. */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -79,6 +86,7 @@ body {
   box-sizing: border-box;
 }
 
+/* Keep gallery images responsive and apply the glass-effect frame. */
 .gallery-photo {
   display: block;
   width: 100%;
@@ -93,6 +101,7 @@ body {
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.25);
 }
 
+/* Arrange flip cards in a centered, responsive grid. */
 .flip-card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
@@ -107,6 +116,7 @@ body {
   box-sizing: border-box;
 }
 
+/* Reset the button appearance and establish the 3D viewing perspective. */
 .flip-card {
   width: 100%;
   max-width: 360px;
@@ -121,6 +131,7 @@ body {
   font: inherit;
 }
 
+/* Preserve the card's 3D space and animate its rotation. */
 .flip-card-inner {
   display: grid;
   width: 100%;
@@ -128,10 +139,12 @@ body {
   transform-style: preserve-3d;
 }
 
+/* Rotate the card when JavaScript adds the flipped class. */
 .flip-card.flipped .flip-card-inner {
   transform: rotateY(180deg);
 }
 
+/* Stack both card faces and hide each face when it points backward. */
 .flip-card-face {
   grid-area: 1 / 1;
   display: grid;
@@ -148,11 +161,13 @@ body {
   -webkit-backface-visibility: hidden;
 }
 
+/* Create the positioning area for the front image and label. */
 .flip-card-front {
   position: relative;
   overflow: hidden;
 }
 
+/* Fill the front face while preserving the image proportions. */
 .flip-card-front img {
   position: absolute;
   inset: 0.75rem;
@@ -162,6 +177,7 @@ body {
   border-radius: 10px;
 }
 
+/* Display the card label above the front image. */
 .flip-card-label {
   position: relative;
   z-index: 1;
@@ -171,10 +187,12 @@ body {
   border-radius: 999px;
 }
 
+/* Turn the back face around so it appears after the card flips. */
 .flip-card-back {
   transform: rotateY(180deg);
 }
 
+/* Keep the back image responsive within the card. */
 .flip-card-back img {
   display: block;
   width: 100%;
