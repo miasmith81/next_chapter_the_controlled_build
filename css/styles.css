@@ -40,6 +40,27 @@ body {
   text-align: center;
 }
 
+.hero-cta {
+  display: block;
+  width: fit-content;
+  margin: 1.25rem auto 0;
+  padding: 0.75rem 1.25rem;
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.25);
+}
+
+.hero-cta:hover,
+.hero-cta:focus-visible {
+  background: rgba(255, 255, 255, 0.3);
+}
+
 .gallery-heading,
 .memory-heading {
   text-align: center;
