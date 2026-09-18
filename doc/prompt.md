@@ -517,8 +517,3 @@ Result: Added the two images as a centered pair beneath the main gallery grid �
 
 Did I read and explain it myself? [ ] Verified it myself (opened in browser, checked it matches)? [ ] Mistake caught: Codex itself surfaced a real bug and declined to fix it since it was out of scope for this prompt — Section 3's flip-card back face references assets/A New Day.jpg (with a space, capital A/N/D), but the real file on disk is assets/aNewDay.jpg. That mismatch means the Section 3 flip-card image is currently broken (won't load) in the live page. This needs its own fix-it prompt — see note below.
 
-See task progress for longer tasks.
-
-prompt-log.md
-
-Track tools and referenced files used in this task.
