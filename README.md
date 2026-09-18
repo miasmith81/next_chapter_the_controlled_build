@@ -30,10 +30,6 @@ Because this is a static website, you can view it directly in a browser by openi
 
 For a local web server, run:
 
-```bash
-python3 -m http.server 8000
-```
-
 Then open:
 
 ```text
