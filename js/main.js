@@ -2,7 +2,7 @@
 
 // Project JavaScript
 
-const flipCards = document.querySelectorAll(".flip-card");
+const flipCards = document.querySelectorAll(".flip-card"); 
 
 flipCards.forEach((card) => {
   card.addEventListener("click", () => {
