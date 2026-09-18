@@ -148,6 +148,29 @@ body {
   -webkit-backface-visibility: hidden;
 }
 
+.flip-card-front {
+  position: relative;
+  overflow: hidden;
+}
+
+.flip-card-front img {
+  position: absolute;
+  inset: 0.75rem;
+  width: calc(100% - 1.5rem);
+  height: calc(100% - 1.5rem);
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.flip-card-label {
+  position: relative;
+  z-index: 1;
+  padding: 0.5rem 0.75rem;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 999px;
+}
+
 .flip-card-back {
   transform: rotateY(180deg);
 }
