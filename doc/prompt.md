@@ -67,7 +67,7 @@ Reply: approved
 
 Result: Added the diagonal blue, green, and violet gradient to css/styles.css.
 
-Did I read and explain it myself? [x] Verified it myself (opened in browser, checked it matches)? [x] — background gradient displayed correctly, approved Mistake caught: Codex flagged that the new background wouldn't render until a "reference" was corrected — (confirm: did it render fine as-is, or did you fix something first? fill in what actually happened)
+Did I read and explain it myself? [x] Verified it myself (opened in browser, checked it matches)? [x] — background gradient displayed correctly, approved Mistake caught: UNVERIFIED — the original note says Codex flagged a reference issue, but the exact resolution was not recorded and has not been reconstructed.
 
 Entry 5 — Hero h1: Glassmorphism Style
 
@@ -222,7 +222,7 @@ Did I read and explain it myself? [x] Verified it myself (opened in browser, che
 
 Entry 11 — Section 3: Glassmorphism Cards for 2 Video Placeholders
 
-Note: the prompt that reduced section 3 from 3 to 2 video placeholders isn't logged yet — paste that prompt/response in when you get a chance so the sequence is complete.
+Historical gap: the exact prompt that reduced section 3 from 3 to 2 video placeholders was not recorded. It is marked UNKNOWN rather than reconstructed or attributed without evidence.
 
 Prompt: Turn section 3 into glassmorphism cards, same style as the hero and gallery cards (frosted background, blur, thin border, rounded corners, shadow), sized so each video shows an even border of the card around it. CSS only unless a wrapper element is needed — propose the exact HTML change first.
 
@@ -515,5 +515,170 @@ Reply: approved
 
 Result: Added the two images as a centered pair beneath the main gallery grid — group structure in index.html (line 37), styling in css/styles.css (line 68). Both retain existing .gallery-photo glassmorphism styling. Section 3 was not changed.
 
-Did I read and explain it myself? [ ] Verified it myself (opened in browser, checked it matches)? [ ] Mistake caught: Codex itself surfaced a real bug and declined to fix it since it was out of scope for this prompt — Section 3's flip-card back face references assets/A New Day.jpg (with a space, capital A/N/D), but the real file on disk is assets/aNewDay.jpg. That mismatch means the Section 3 flip-card image is currently broken (won't load) in the live page. This needs its own fix-it prompt — see note below.
+Did I read and explain it myself? [ ] Verified it myself (opened in browser, checked it matches)? [ ] Mistake caught: Codex itself surfaced a real bug and declined to fix it since it was out of scope for this prompt — Section 3's flip-card back face referenced assets/A New Day.jpg (with a space, capital A/N/D), while the real file was assets/aNewDay.jpg. That mismatch broke the image at the time. It was fixed later in Entry 24, then replaced with the optimized assets/aNewDay.webp in Entry 30.
 
+Current-state note: The two-image gallery pair described in this entry was later removed from index.html. The exact prompt that led to that removal is not available in this log, so it is marked UNKNOWN rather than invented. The unused .gallery-pair CSS was removed during the rubric cleanup in Entry 33.
+
+Backfill disclosure — Entries 16–33
+
+The following entries were added before the presentation from the actual Codex conversation and repository history. They were not logged live at the moment each prompt was sent. Wording is preserved where the prompt is available; uncertain historical details are marked UNKNOWN.
+
+Entry 16 — Restore the Project Files
+
+Prompt: codex you need to go and update all the files and code for all the css and the javascript
+
+Result: The project returned to a working HTML/CSS/JavaScript implementation. The exact intermediate diff for this historical prompt is UNKNOWN; the final files were reviewed in later entries.
+
+Did I read and explain it myself? [ ] Verified it myself? [ ] Mistake caught:
+
+Entry 17 — Review the Existing Implementation and README
+
+Prompt: look back at all the impementation of creating the css and javascript and updating the html and read the read me that is on is present and put back all the code and notes
+
+Result: Existing HTML, CSS, JavaScript, README, and notes were reviewed and restored. The exact intermediate diff is UNKNOWN; later entries document the resulting implementation.
+
+Did I read and explain it myself? [ ] Verified it myself? [ ] Mistake caught:
+
+Entry 18 — Replace the Old Flip Cards
+
+Prompt: codex take awa the old cards that flip and make the new smaller cards flip
+
+Result: Section 3 uses two click-to-flip cards. Later responsive work capped their desktop size while preserving the flip behavior.
+
+Did I read and explain it myself? [ ] Verified it myself? [ ] Mistake caught:
+
+Entry 19 — Document Flip-Card Functionality
+
+Prompt: make notes on the functioanity of the flip cards
+
+Result: Entries 13 and 14 document the front/back structure, 3D CSS rotation, click listener, aria-pressed state, independent card behavior, and dynamic image sizing.
+
+Did I read and explain it myself? [ ] Verified it myself? [ ] Mistake caught:
+
+Entry 20 — Remove Video-Section Code
+
+Prompt: take out the video section code
+
+Result: Video-specific section naming and wrapper classes were replaced with memory-gallery, memory-heading, and flip-card-grid naming. The working flip-card code remained.
+
+Did I read and explain it myself? [ ] Verified it myself? [ ] Mistake caught:
+
+Entry 21 — Professional Project Audit
+
+Prompt: Role: You are the lead designer with 7+ years of fullstack development. This project needs severa; critical fixes and audited for best Web Dev practices. Systematically repair this project to restore professionalism and functionality. The github page is not rendering the images without a delay, the spacing of the cards doesn't follow responsive design practices.
+
+Result: The work was divided into scoped, reviewable fixes documented in Entries 22–33 instead of applying an unreviewed wholesale rewrite.
+
+Did I read and explain it myself? [ ] Verified it myself? [ ] Mistake caught:
+
+Entry 22 — Compress Gallery Images and Add Dimensions
+
+Prompt: Compress the gallery images to reasonable web sizes (target well under 500KB each) and add explicit width/height attributes to every <img> tag so the layout doesn't shift while they load. Don't change any other CSS, HTML structure, or JS.
+
+Result: Gallery photos were converted to WebP files below 500KB, image sources were updated, and explicit width/height attributes were added. CSS, JavaScript, and HTML structure were unchanged for this prompt.
+
+Did I read and explain it myself? [ ] Verified it myself? [ ] Mistake caught:
+
+Entry 23 — Responsive Gallery Container
+
+Prompt: Wrap the gallery grid in a max-width page container with consistent outer gutters, so cards stop appearing oversized with uneven spacing. CSS only.
+
+Result: .gallery-grid received a 1200px max width, centered margins, responsive outer padding, and border-box sizing. HTML and JavaScript were unchanged.
+
+Did I read and explain it myself? [ ] Verified it myself? [ ] Mistake caught:
+
+Entry 24 — Fix the New Day Image Path
+
+Prompt: Section 3's flip-card image references assets/A New Day.jpg, but the actual file is assets/aNewDay.jpg — fix the src path so the image loads. HTML only, one-line fix. Propose the exact change first.
+
+Reply: approved
+
+Result: The flip-card source was changed from assets/A New Day.jpg to assets/aNewDay.jpg. No other code changed for this prompt.
+
+Did I read and explain it myself? [ ] Verified it myself? [ ] Mistake caught: The filename capitalization and spacing did not match the real asset.
+
+Entry 25 — Remove Leftover Video Naming
+
+Prompt: Confirm whether the leftover video section CSS/markup cleanup prompt was actually applied. If it wasn't, remove any remaining .video-placeholder rules or unused video-related HTML now. Don't touch the working flip-card code. Propose the exact removal first.
+
+Reply: Approved
+
+Result: Remaining video-oriented section and wrapper names were replaced with memory-card naming. The flip-card structure, styles, and JavaScript behavior were preserved.
+
+Did I read and explain it myself? [ ] Verified it myself? [ ] Mistake caught:
+
+Entry 26 — Asset-Path Audit
+
+Prompt: Audit every image src and href path in index.html and css/styles.css for capitalization or spacing mismatches against the actual filenames in the assets folder. List every mismatch found — don't fix anything yet, just report.
+
+Result: This was a read-only audit. No files were changed. A later current-state verification confirmed that all image, stylesheet, and script paths resolve.
+
+Did I read and explain it myself? [ ] Verified it myself? [ ] Mistake caught:
+
+Entry 27 — Alt-Text Audit
+
+Prompt: Check that every <img> element has meaningful alt text describing what the image shows (not generic placeholder text). List any that need better alt text — don't change anything yet.
+
+Result: This was a read-only audit. Every image had an alt attribute, but generic labels such as “Jackson Pic 1” and “New Day Image” were identified as candidates for more descriptive wording. No files were changed.
+
+Did I read and explain it myself? [ ] Verified it myself? [ ] Mistake caught:
+
+Entry 28 — Responsive Browser Audit
+
+Prompt: Check the page at 375px, 768px, and 1200px viewport widths for layout problems — overlapping elements, text cut off, cards too small/large. Report findings only, don't change anything yet.
+
+Result: No horizontal overflow, overlap, clipped text, or failed image loads were found. The flip cards had noticeably different heights, the two cards grew too large at 1200px, and a stray period appeared beneath the first card. No files were changed for this audit.
+
+Did I read and explain it myself? [ ] Verified it myself? [ ] Mistake caught: The responsive audit exposed oversized desktop flip cards and the stray period.
+
+Entry 29 — Optimize the Hero Image
+
+Prompt: Compress the hero photo (assets/jacksonHero.jpeg, currently 1.2MB) to a web-optimized WebP file, matching the size/quality approach already used for the gallery images. Update the src accordingly. Don't change anything else.
+
+Result: The existing optimized assets/jacksonHero.webp file (37,426 bytes, 960×1280) replaced the 1.2MB JPEG source reference. No other change was made for this prompt.
+
+Did I read and explain it myself? [ ] Verified it myself? [ ] Mistake caught:
+
+Entry 30 — Use WebP Images on Flip-Card Backs
+
+Prompt: The two flip-card back-face images reference assets/aNewDay.jpg (365KB) and assets/United.jpg (619KB), but optimized WebP versions of the same photos already exist at assets/aNewDay.webp (26KB) and assets/United.webp (105KB). Point the flip-card images at the existing WebP files instead. HTML only, two src changes.
+
+Result: The two flip-card image sources were changed to assets/aNewDay.webp and assets/United.webp. CSS and JavaScript were unchanged.
+
+Did I read and explain it myself? [ ] Verified it myself? [ ] Mistake caught:
+
+Entry 31 — Add the Call to Action
+
+Prompt: A call-to-action is missing from the page entirely. Add one — propose where it should go and what it should say before applying anything.
+
+Codex proposed: Place “Explore Jackson’s Memories” inside the hero after the three tribute messages and link it to #photo-gallery. This keeps exactly three sections.
+
+Reply: Approved
+
+Result: Added one centered hero CTA and matching glassmorphism styling. The page retained exactly three sections and required no JavaScript change.
+
+Did I read and explain it myself? [ ] Verified it myself? [ ] Mistake caught: The required CTA was missing before this entry.
+
+Entry 32 — Rename the Second Flip Card
+
+Prompt: The second flip card's front face still reads "Jackson Video 2," left over from before the video-to-flip-card change. Update it to match the naming style of the first card ("New Day Pic"). Propose the exact replacement text first.
+
+Codex proposed: Replace “Jackson Video 2” with “United Pic.”
+
+Reply: Approved
+
+Result: The second flip-card front label was changed to “United Pic.” No other code changed for this prompt.
+
+Did I read and explain it myself? [ ] Verified it myself? [ ] Mistake caught: Obsolete video wording remained after the section became memory cards.
+
+Entry 33 — Rubric Audit and Presentation Cleanup
+
+Prompt: doc/PROJECT_GUIDELINES.md Confirm the project meets all the rubric requirements for today's presentation. List and propose any fixes for approval.
+
+Codex reported: The deployed page met the technical requirements, but the Prompt Log was incomplete, personal explanation and verification could not be confirmed, a stray period and unused .gallery-pair CSS remained, three WebP dimension attributes used old JPEG dimensions, and the flip cards were oversized at 1200px.
+
+Reply: Approve all fixes
+
+Result: Backfilled the Prompt Log with an explicit disclosure; removed the stray period and unused .gallery-pair CSS; corrected the hero and flip-card WebP dimensions; and capped the flip-card grid at 768px with 360px maximum card columns. Personal read/explain/verify checkboxes remain unchecked for Mia to complete herself.
+
+Did I read and explain it myself? [ ] Verified it myself? [ ] Mistake caught: The audit found documentation gaps and presentation-polish issues that were not visible from the rubric checklist alone.
