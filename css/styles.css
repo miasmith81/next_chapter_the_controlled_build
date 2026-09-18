@@ -95,7 +95,7 @@ body {
 
 .flip-card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 360px));
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   justify-content: center;
   gap: 1.5rem;
   width: 100%;
@@ -109,6 +109,8 @@ body {
 
 .flip-card {
   width: 100%;
+  max-width: 360px;
+  justify-self: center;
   align-self: start;
   padding: 0;
   border: 0;

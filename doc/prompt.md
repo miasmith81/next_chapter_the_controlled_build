@@ -679,6 +679,6 @@ Codex reported: The deployed page met the technical requirements, but the Prompt
 
 Reply: Approve all fixes
 
-Result: Backfilled the Prompt Log with an explicit disclosure; removed the stray period and unused .gallery-pair CSS; corrected the hero and flip-card WebP dimensions; and capped the flip-card grid at 768px with 360px maximum card columns. Personal read/explain/verify checkboxes remain unchecked for Mia to complete herself.
+Result: Backfilled the Prompt Log with an explicit disclosure; removed the stray period and unused .gallery-pair CSS; corrected the hero and flip-card WebP dimensions; and capped the flip-card grid at 768px with 360px maximum cards. Personal read/explain/verify checkboxes remain unchecked for Mia to complete herself.
 
-Did I read and explain it myself? [ ] Verified it myself? [ ] Mistake caught: The audit found documentation gaps and presentation-polish issues that were not visible from the rubric checklist alone.
+Did I read and explain it myself? [ ] Verified it myself? [ ] Mistake caught: The audit found documentation gaps and presentation-polish issues that were not visible from the rubric checklist alone. Browser verification also caught that the first sizing rule forced one column at tablet and desktop widths; it was corrected to keep one mobile column and two centered tablet/desktop columns.
