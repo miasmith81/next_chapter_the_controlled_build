@@ -1,0 +1,24 @@
+{
+  "name": "next_chapter_the_controlled_build",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miasmith81/next_chapter_the_controlled_build.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/miasmith81/next_chapter_the_controlled_build"
+  },
+  "homepage": "https://github.com/miasmith81/next_chapter_the_controlled_build"
+}
